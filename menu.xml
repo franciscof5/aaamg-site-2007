@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<menu type="Flash Menu Labs Open Source Edition  (Vertical)  www.flashmenulabs.com" >
+
+
+	<spec_menu_params
+		is_physic_enabled = "1"					
+		webmaster_text = "Smaple webmaster text"
+		webmaster_url = "http://flashmenulabs.com"
+		
+		
+		enable_soft_wave_when_appear = "1"	comment = "to use this effect you should set is_physic_enabled = 1 "
+		
+		
+		base_shift_x = "0"		comment = "basic shift of the menu X"
+		base_shift_y = "0"		comment = "basic shift of the menu Y"
+					
+	
+					
+		appear_effect_pos_type = "0"		comment = " Position Effect when appearing; 0 - no pos effect; 1 - from random pos; 2 - from sides"
+		disappear_effect_pos_type = "0"		comment = " Position Effect when disappearing"
+
+		appear_effect_opacity_type ="1"	comment = "Opacity Effect when appearing; 0 - no opacity effect;1 - simple fade in; 2 - luminiscent lamp"
+		disappear_effect_opacity_type = "1"	comment = "Opacity Effect when disappearing"
+
+			
+
+		flex_coef = "3.9"		comment = "Physics, flexibility coef" 
+		decay_coef = "1.25"	comment = "Physics, decay coef" 
+		random_coef = "0.0"	comment = "Physics, coef of randomnes of physic parameters" 
+	/>
+
+	<app_disapp_eff>
+		<!-- Appear/disappear effect parameters -->
+		<eff_pos 
+			max_time_to_wait = "0.5" 
+			accel_coef = "5" 
+			base_speed = "100"
+			jump_coef = "0.33"
+			even_odd_side_dist = "71"
+		/>
+		
+		<eff_opacity 
+			max_time_to_wait = "0"
+			time_to_appear = "2.1"	
+			time_to_disappear ="2.1"		
+		/>
+	</app_disapp_eff>
+
+
+	<!-- Menu Level parameters (0 - root menu level, 1 - for all sublevels)     -->
+	<level 
+		numb= "0" 					comment = "for root menu level"
+		fixed_menu_width = "-1"	  comment = "minimum width of menu item. Setting to -1 make it autosized  "	
+		menu_height_coef = "1.2"		comment = "the resulting menu height will be text height multiplyed by this coef"
+		dist_between_menu_items_x = "0"
+		dist_between_menu_items_y = "1"	
+	>		
+		<font	
+			comment = " font parameters in 3 states normal, mouseover,selected"
+			size = "12"
+
+			underline_normal = "0"
+			underline_mouseover = "1"
+			underline_selected = "1"
+
+			bold_normal = "0"
+			bold_mouseover = "0"
+			bold_selected = "0"
+ 
+			color_normal =    "0xFFFFFF"
+			color_mouseover = "0xFFFFFF"
+			color_selected =  "0xFFFFFF"
+		/>
+		<place_dist
+			border_dist = "10"		comment = "distance between menu item left border and text"
+		/>
+		
+	</level>
+
+	<level 
+		numb= "1"	comment = "for all menu sublevels"
+
+		fixed_menu_width = "10"		comment = "minimum width of menu item. Setting to -1 make it autosized  "		
+		menu_height_coef = "1.1"	comment = "the resulting menu height will be text height multiplyed by this coef"
+		dist_between_menu_items_x = "2"
+		dist_between_menu_items_y = "1"
+	>		
+		<font
+			comment = " font parameters in 3 states normal, mouseover,selected"
+			size = "11"
+
+			underline_normal = "0"
+			underline_mouseover = "1"
+			underline_selected = "1"
+
+			bold_normal = "1"
+			bold_mouseover = "1"
+			bold_selected = "1"			
+			
+			color_normal =    "0x424242"
+			color_mouseover = "0xEEEEEE"
+			color_selected =  "0xEEEEEE" 
+		/>
+		<place_dist
+			border_dist = "10"		comment = "distance between menu item left border and text"
+		/>
+	</level>
+
+	<!--  MENU STRUCTURE	-->
+	<menu_structure>
+	
+		<item>
+			<item text = "Inicial" url = "index.html" url_self = "1"></item>
+			<item text = "Mural" url = "mural.php" url_self = "1" ></item>
+			<item text = "Treinos" url = "treinos.html" url_self = "l" >
+				<item text = "Coletivos" url = "coletivos.html" url_self = "l" />
+				<item text = "Individuais" url = "individuais.html" url_self = "l" />
+			</item>
+			<item text = "Campeonatos" url = "campeonatos.html" url_self = "l" >
+				<item text = "Inter-Bixo" url = "interbixo.html" url_self = "l" />
+				<item text = "Inter-Repúblicas" url = "interrepublicas.html" url_self = "l" />
+				<item text = "Inter-Curso" url = "intercurso.html" url_self = "l" />
+			</item>
+			<item text = "Festas" url = "festas.html" url_self = "1"  >
+				<item text = "Inter-Bixo" url = "festainterbixo.html" url_self = "1" />
+				<item text = "Balada do Morcego" url = "baladadomorcego.html" url_self = "1" />
+				<item text = "Pré-Interunesp" url = "preinterunesp.html" url_self = "1" />
+			</item>
+			<item text = "Jogos" url = "jogos.html" url_self = "l" >
+				<item text = "InterUnesp" url = "interunesp.html" url_self = "l" />
+				<item text = "Economíadas Caipira" url = "economiadas.html" url_self = "l" />
+				<item text = "Títulos" url = "titulos.html" url_self = "l" />
+			</item>
+			<item text = "Modalidades" url = "modalidades.html"  url_self = "1" >
+				<item text = "Equipes" url = "equipes.html" url_self = "1" />
+				<item text = "Ranking" url = "ranking.html" url_self = "1" />
+			</item>
+			<item text = "Bateria" url = "bateria.html" url_self = "l">
+				<item text = "Histórico" url = "historico.html" url_self = "l" />
+				<item text = "Furia Capilar" url = "furia.html" url_self = "1"></item>
+				<item text = "Hinos" url = "hinos.html" url_self = "l" />
+			</item>
+			<item text = "Sócio-Atlética" url = "socioatletica.html" url_self = "1"></item>
+			<item text = "Diretoria" url = "diretoria.html" url_self = "1" />
+			<item text = "História do Morcego" url = "historiadomorcego.html" url_self = "1" />
+			<item text = "Produtos" url = "default.html" url_self = "1" ></item>
+			<item text = "Cadastre-se" url = "default.html" url_self = "1"></item>
+		</item>
+		
+	</menu_structure>
+
+</menu>

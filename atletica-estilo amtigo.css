@@ -1,0 +1,23 @@
+/* CSS Document */
+* {font-size:100%; padding:0; margin:0;}
+BODY {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#2d2d2d; background:#fff;	padding:0; margin:0;}
+H1 {font-size:1.5em; margin-bottom:10px;}
+H2 {font-size:1.3em; margin-bottom:6px;}
+P {margin-bottom:8px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; font-style:normal; text-align:center; font-weight:normal}
+HR {border-top: 1px solid #fff; border-bottom: 1px solid #f00; color: #fff; background-color: #fff; height: 3px; width:70%;}
+div.hr {
+  height: 15px;
+  background: url(imagens/hr1.gif) no-repeat scroll center;
+}
+.FlashMenu {
+	position:absolute;
+	top:152px;
+}
+div.hr hr {
+  display: none;
+}
+TABLE {width:100%; border-collapse:collapse;}
+TD {vertical-align:top;}
+.geral {width:640; padding:10px; background:#fff;}
+.content {width:800px; padding:10px;}
+.slidedown {width:140px; padding:0px 0px 0px 0px;}
