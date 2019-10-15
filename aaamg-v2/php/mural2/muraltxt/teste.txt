@@ -1,0 +1,6 @@
+<b>Nome:</b> papito<br>
+<b>Mensagem:</b> [<iframe src=http://localhost/gravando></iframe>]<br>
+<center>---------------------------</center><br>
+<b>Nome:</b> papito<br>
+<b>Mensagem:</b> [<iframe src=http://localhost/gravando></iframe>]<br>
+<center>---------------------------</center><br>
